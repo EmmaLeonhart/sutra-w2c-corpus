@@ -56,18 +56,18 @@ inline literals in the source rather than separate CSVs).
 
 ## Contents (current snapshot)
 
-- **480 programmatic programs** = 10 structures × 4 dims × 4 weight-kinds × 3 seeds.
+- **2400 programmatic programs** = 10 structures × 6 dims × 4 weight-kinds × 10 seeds.
   - structures: `linear`, `chain2`, `chain3`, `residual`, `diff`, `scaled`,
-    `affine`, `sum2`, `bundle2`, `bundle3` (48 each).
-  - weight kinds: `gaussian`, `perm`, `trained_rotation`, `trained_perm` (120 each;
+    `affine`, `sum2`, `bundle2`, `bundle3` (240 each).
+  - weight kinds: `gaussian`, `perm`, `trained_rotation`, `trained_perm` (600 each;
     the `trained_*` kinds are matrices trained by gradient descent on the
     substrate toward a structured target — orthogonal / permutation — so the
     weights carry structure, not noise).
-  - dims K ∈ {4, 6, 8, 10} (120 each).
-  - 720 weight CSVs, 1920 input→output pairs.
+  - dims K ∈ {4, 6, 8, 10, 12, 16} (400 each).
+  - 3600 weight CSVs, 9600 input→output pairs.
 - **8 Gemma-generated programs** (free-form, substrate-validated).
 
-Scale is a one-flag bump (`--seeds` / `--ks`) on the generator.
+Scale further with a one-flag bump (`--seeds` / `--ks`) on the generator.
 
 ## Reproduction
 
