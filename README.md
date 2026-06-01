@@ -56,7 +56,7 @@ inline literals in the source rather than separate CSVs).
 
 ## Contents (current snapshot)
 
-- **3600 programmatic programs** = 15 structures × 6 dims × 4 weight-kinds × 10 seeds.
+- **7200 programmatic programs** = 15 structures × 6 dims × 4 weight-kinds × 20 seeds.
   - structures: `linear`, `chain2`, `chain3`, `residual`, `diff`, `scaled`,
     `affine`, `sum2`, `bundle2`, `bundle3`, plus five harder families that
     force inference over template-matching — `chain4`, `scaled_res`
