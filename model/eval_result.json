@@ -1,0 +1,407 @@
+{
+ "summary": {
+  "n": 720,
+  "exact_match": 584,
+  "exact_match_rate": 0.8111,
+  "exact_match_canonical": 594,
+  "exact_match_canonical_rate": 0.825,
+  "io_reproduction": 595,
+  "io_reproduction_rate": 0.8264,
+  "non_exact_but_io_ok": 11,
+  "compile_fail": 0,
+  "run_fail": 0,
+  "tol": 0.001,
+  "per_structure": {
+   "affine": {
+    "n": 48,
+    "exact": 48,
+    "exact_canon": 48,
+    "io_ok": 48,
+    "exact_rate": 1.0,
+    "exact_canon_rate": 1.0,
+    "io_rate": 1.0
+   },
+   "bundle2": {
+    "n": 48,
+    "exact": 46,
+    "exact_canon": 46,
+    "io_ok": 46,
+    "exact_rate": 0.9583,
+    "exact_canon_rate": 0.9583,
+    "io_rate": 0.9583
+   },
+   "bundle3": {
+    "n": 48,
+    "exact": 48,
+    "exact_canon": 48,
+    "io_ok": 48,
+    "exact_rate": 1.0,
+    "exact_canon_rate": 1.0,
+    "io_rate": 1.0
+   },
+   "chain2": {
+    "n": 48,
+    "exact": 46,
+    "exact_canon": 46,
+    "io_ok": 46,
+    "exact_rate": 0.9583,
+    "exact_canon_rate": 0.9583,
+    "io_rate": 0.9583
+   },
+   "chain3": {
+    "n": 48,
+    "exact": 48,
+    "exact_canon": 48,
+    "io_ok": 48,
+    "exact_rate": 1.0,
+    "exact_canon_rate": 1.0,
+    "io_rate": 1.0
+   },
+   "chain4": {
+    "n": 48,
+    "exact": 48,
+    "exact_canon": 48,
+    "io_ok": 48,
+    "exact_rate": 1.0,
+    "exact_canon_rate": 1.0,
+    "io_rate": 1.0
+   },
+   "diff": {
+    "n": 48,
+    "exact": 47,
+    "exact_canon": 47,
+    "io_ok": 47,
+    "exact_rate": 0.9792,
+    "exact_canon_rate": 0.9792,
+    "io_rate": 0.9792
+   },
+   "gen_affine": {
+    "n": 48,
+    "exact": 15,
+    "exact_canon": 21,
+    "io_ok": 21,
+    "exact_rate": 0.3125,
+    "exact_canon_rate": 0.4375,
+    "io_rate": 0.4375
+   },
+   "linear": {
+    "n": 48,
+    "exact": 47,
+    "exact_canon": 47,
+    "io_ok": 47,
+    "exact_rate": 0.9792,
+    "exact_canon_rate": 0.9792,
+    "io_rate": 0.9792
+   },
+   "residual": {
+    "n": 48,
+    "exact": 45,
+    "exact_canon": 45,
+    "io_ok": 45,
+    "exact_rate": 0.9375,
+    "exact_canon_rate": 0.9375,
+    "io_rate": 0.9375
+   },
+   "scaled": {
+    "n": 48,
+    "exact": 47,
+    "exact_canon": 47,
+    "io_ok": 48,
+    "exact_rate": 0.9792,
+    "exact_canon_rate": 0.9792,
+    "io_rate": 1.0
+   },
+   "scaled_diff": {
+    "n": 48,
+    "exact": 21,
+    "exact_canon": 21,
+    "io_ok": 21,
+    "exact_rate": 0.4375,
+    "exact_canon_rate": 0.4375,
+    "io_rate": 0.4375
+   },
+   "scaled_res": {
+    "n": 48,
+    "exact": 26,
+    "exact_canon": 29,
+    "io_ok": 29,
+    "exact_rate": 0.5417,
+    "exact_canon_rate": 0.6042,
+    "io_rate": 0.6042
+   },
+   "sum2": {
+    "n": 48,
+    "exact": 45,
+    "exact_canon": 45,
+    "io_ok": 45,
+    "exact_rate": 0.9375,
+    "exact_canon_rate": 0.9375,
+    "io_rate": 0.9375
+   },
+   "two_mat_affine": {
+    "n": 48,
+    "exact": 7,
+    "exact_canon": 8,
+    "io_ok": 8,
+    "exact_rate": 0.1458,
+    "exact_canon_rate": 0.1667,
+    "io_rate": 0.1667
+   }
+  },
+  "coeff_subst": {
+   "n": 192,
+   "io_base": 79,
+   "io_base_rate": 0.4115,
+   "io_subst": 43,
+   "io_subst_rate": 0.224
+  }
+ },
+ "wins": [
+  {
+   "id": "scaled_K4_trained_perm_s9",
+   "gen": "function vector apply(vector x) {\n    matrix M0 = load_matrix(\"M0\");\n    return Tensor.MatrixMul(M0, x) + x;\n}\nfunction string main() { return \"ok\"; }\n"
+  },
+  {
+   "id": "scaled_res_K10_trained_rotation_s16",
+   "gen": "function vector apply(vector x) {\n    matrix M0 = load_matrix(\"M0\");\n    return Tensor.MatrixMul(M0, x) + x;\n}\nfunction string main() { return \"ok\"; }\n"
+  },
+  {
+   "id": "scaled_res_K12_perm_s9",
+   "gen": "function vector apply(vector x) {\n    matrix M0 = load_matrix(\"M0\");\n    return Tensor.MatrixMul(M0, x) + x;\n}\nfunction string main() { return \"ok\"; }\n"
+  },
+  {
+   "id": "scaled_res_K16_gaussian_s4",
+   "gen": "function vector apply(vector x) {\n    matrix M0 = load_matrix(\"M0\");\n    return Tensor.MatrixMul(M0, x) + x;\n}\nfunction string main() { return \"ok\"; }\n"
+  },
+  {
+   "id": "gen_affine_K4_trained_rotation_s12",
+   "gen": "function vector apply(vector x) {\n    matrix M0 = load_matrix(\"M0\");\n    return 2.0 * Tensor.MatrixMul(M0, x) + x;\n}\nfunction string main() { return \"ok\"; }\n"
+  },
+  {
+   "id": "gen_affine_K6_gaussian_s4",
+   "gen": "function vector apply(vector x) {\n    matrix M0 = load_matrix(\"M0\");\n    return 2.0 * Tensor.MatrixMul(M0, x) + x;\n}\nfunction string main() { return \"ok\"; }\n"
+  },
+  {
+   "id": "gen_affine_K6_trained_rotation_s7",
+   "gen": "function vector apply(vector x) {\n    matrix M0 = load_matrix(\"M0\");\n    return 0.5 * Tensor.MatrixMul(M0, x) + x;\n}\nfunction string main() { return \"ok\"; }\n"
+  },
+  {
+   "id": "gen_affine_K8_perm_s1",
+   "gen": "function vector apply(vector x) {\n    matrix M0 = load_matrix(\"M0\");\n    return 2.0 * Tensor.MatrixMul(M0, x) + x;\n}\nfunction string main() { return \"ok\"; }\n"
+  },
+  {
+   "id": "gen_affine_K12_perm_s17",
+   "gen": "function vector apply(vector x) {\n    matrix M0 = load_matrix(\"M0\");\n    return 0.5 * Tensor.MatrixMul(M0, x) + x;\n}\nfunction string main() { return \"ok\"; }\n"
+  },
+  {
+   "id": "gen_affine_K16_trained_rotation_s0",
+   "gen": "function vector apply(vector x) {\n    matrix M0 = load_matrix(\"M0\");\n    return 2.0 * Tensor.MatrixMul(M0, x) + x;\n}\nfunction string main() { return \"ok\"; }\n"
+  },
+  {
+   "id": "two_mat_affine_K12_perm_s14",
+   "gen": "function vector apply(vector x) {\n    matrix M0 = load_matrix(\"M0\");\n    matrix M1 = load_matrix(\"M1\");\n    return Tensor.MatrixMul(M0, x) + Tensor.MatrixMul(M1, x);\n}\nfunction string main() { return \"ok\"; }\n"
+  }
+ ],
+ "fails": [
+  {
+   "id": "linear_K6_trained_perm_s8",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "chain2_K4_gaussian_s7",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "chain2_K4_gaussian_s16",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "residual_K4_gaussian_s14",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "residual_K6_perm_s13",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "residual_K16_perm_s9",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "diff_K16_gaussian_s0",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "sum2_K6_trained_rotation_s8",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "sum2_K8_trained_rotation_s0",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "sum2_K16_trained_rotation_s7",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "bundle2_K4_perm_s5",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "bundle2_K6_trained_rotation_s5",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K4_gaussian_s3",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K4_trained_rotation_s6",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K4_trained_rotation_s19",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K4_trained_perm_s8",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K6_gaussian_s5",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K6_gaussian_s14",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K6_trained_rotation_s17",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K6_trained_perm_s4",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K6_trained_perm_s11",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K8_gaussian_s12",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K8_trained_rotation_s0",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K8_trained_rotation_s15",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K8_trained_perm_s17",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K10_perm_s16",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K12_gaussian_s13",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K12_trained_rotation_s3",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K16_perm_s1",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K16_perm_s16",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "scaled_res_K16_trained_rotation_s7",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "gen_affine_K4_gaussian_s6",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "gen_affine_K4_gaussian_s17",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "gen_affine_K4_perm_s9",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "gen_affine_K4_perm_s18",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "gen_affine_K4_trained_perm_s7",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "gen_affine_K4_trained_perm_s18",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "gen_affine_K6_gaussian_s15",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "gen_affine_K6_perm_s5",
+   "exact": false,
+   "detail": "value mismatch"
+  },
+  {
+   "id": "gen_affine_K6_trained_rotation_s10",
+   "exact": false,
+   "detail": "value mismatch"
+  }
+ ]
+}
