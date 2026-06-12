@@ -32,6 +32,11 @@ with its `weights` reproduces the recorded `io` on the Sutra substrate.
 - `*.csv` — one file-backed weight matrix per matrix (comma-separated
   floats, one row per line), referenced from a program's `source` via
   Sutra's `load_matrix("…csv")`.
+- `model/` — the **official baseline weight→code model** trained on this
+  corpus (checkpoint + vocab + full substrate eval): exact source match
+  **0.811**, substrate IO reproduction **0.826** on the 720 held-out
+  programs, 0 compile/run failures. See `model/README.md` for the
+  per-structure breakdown and the coefficient wall.
 
 ## Schema (one JSONL line = one datapoint)
 
